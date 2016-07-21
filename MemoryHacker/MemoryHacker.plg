@@ -1,0 +1,131 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MemoryHacker - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/MemoryHacker.res" /d "NDEBUG" /d "_AFXDLL" "D:\NewProjects\Native\MemoryHacker\MemoryHacker.rc"" 
+Creating temporary file "C:\Users\Mihai\AppData\Local\Temp\RSPC31.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/MemoryHacker.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\NewProjects\Native\MemoryHacker\CustomizeDlg.cpp"
+"D:\NewProjects\Native\MemoryHacker\GenericPurposeMethods.cpp"
+"D:\NewProjects\Native\MemoryHacker\InspectMemory.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryBlock.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryHack.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryHacker.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryHackerDlg.cpp"
+"D:\NewProjects\Native\MemoryHacker\ModulesDlg.cpp"
+"D:\NewProjects\Native\MemoryHacker\NewEdit.cpp"
+]
+Creating command line "cl.exe @C:\Users\Mihai\AppData\Local\Temp\RSPC31.tmp" 
+Creating temporary file "C:\Users\Mihai\AppData\Local\Temp\RSPC41.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/MemoryHacker.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\NewProjects\Native\MemoryHacker\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Mihai\AppData\Local\Temp\RSPC41.tmp" 
+Creating temporary file "C:\Users\Mihai\AppData\Local\Temp\RSPC42.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/MemoryHacker.pdb" /machine:I386 /out:"Release/MemoryHacker.exe" 
+.\Release\CustomizeDlg.obj
+.\Release\GenericPurposeMethods.obj
+.\Release\InspectMemory.obj
+.\Release\MemoryBlock.obj
+.\Release\MemoryHack.obj
+.\Release\MemoryHacker.obj
+.\Release\MemoryHackerDlg.obj
+.\Release\ModulesDlg.obj
+.\Release\NewEdit.obj
+.\Release\StdAfx.obj
+.\Release\MemoryHacker.res
+]
+Creating command line "link.exe @C:\Users\Mihai\AppData\Local\Temp\RSPC42.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CustomizeDlg.cpp
+GenericPurposeMethods.cpp
+InspectMemory.cpp
+MemoryBlock.cpp
+MemoryHack.cpp
+MemoryHacker.cpp
+MemoryHackerDlg.cpp
+ModulesDlg.cpp
+NewEdit.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MemoryHacker.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MemoryHacker - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/MemoryHacker.res" /d "_DEBUG" /d "_AFXDLL" "D:\NewProjects\Native\MemoryHacker\MemoryHacker.rc"" 
+Creating temporary file "C:\Users\Mihai\AppData\Local\Temp\RSP1EBA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MemoryHacker.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\NewProjects\Native\MemoryHacker\CustomizeDlg.cpp"
+"D:\NewProjects\Native\MemoryHacker\GenericPurposeMethods.cpp"
+"D:\NewProjects\Native\MemoryHacker\InspectMemory.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryBlock.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryHack.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryHacker.cpp"
+"D:\NewProjects\Native\MemoryHacker\MemoryHackerDlg.cpp"
+"D:\NewProjects\Native\MemoryHacker\ModulesDlg.cpp"
+"D:\NewProjects\Native\MemoryHacker\NewEdit.cpp"
+]
+Creating command line "cl.exe @C:\Users\Mihai\AppData\Local\Temp\RSP1EBA.tmp" 
+Creating temporary file "C:\Users\Mihai\AppData\Local\Temp\RSP1EBB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MemoryHacker.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\NewProjects\Native\MemoryHacker\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Mihai\AppData\Local\Temp\RSP1EBB.tmp" 
+Creating temporary file "C:\Users\Mihai\AppData\Local\Temp\RSP1EBC.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MemoryHacker.pdb" /debug /machine:I386 /out:"Debug/MemoryHacker.exe" /pdbtype:sept 
+.\Debug\CustomizeDlg.obj
+.\Debug\GenericPurposeMethods.obj
+.\Debug\InspectMemory.obj
+.\Debug\MemoryBlock.obj
+.\Debug\MemoryHack.obj
+.\Debug\MemoryHacker.obj
+.\Debug\MemoryHackerDlg.obj
+.\Debug\ModulesDlg.obj
+.\Debug\NewEdit.obj
+.\Debug\StdAfx.obj
+.\Debug\MemoryHacker.res
+]
+Creating command line "link.exe @C:\Users\Mihai\AppData\Local\Temp\RSP1EBC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CustomizeDlg.cpp
+GenericPurposeMethods.cpp
+InspectMemory.cpp
+MemoryBlock.cpp
+MemoryHack.cpp
+MemoryHacker.cpp
+MemoryHackerDlg.cpp
+ModulesDlg.cpp
+NewEdit.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MemoryHacker.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

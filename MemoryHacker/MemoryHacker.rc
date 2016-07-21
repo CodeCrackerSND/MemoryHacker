@@ -1,0 +1,329 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MemoryHacker.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MemoryHacker.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MEMORYHACKER_DIALOG DIALOGEX 0, 0, 320, 313
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MemoryHacker by CodeCracker / SnD"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,306,299
+END
+
+IDD_MEMORYHACK_DIALOG DIALOG DISCARDABLE  0, 0, 320, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Memory hacker for "
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Full search",IDC_FULLSEARCH_RAD,"Button",
+                    BS_AUTORADIOBUTTON,15,14,50,10
+    CONTROL         "Custom search",IDC_CUSTOMSEARCH_RAD,"Button",
+                    BS_AUTORADIOBUTTON,70,15,63,10
+    PUSHBUTTON      "Customize",IDC_CUSTOMIZE_BTN,137,14,50,14
+    LTEXT           "Type:",IDC_STATIC,17,31,19,8
+    COMBOBOX        IDC_TYPE_COMBO,18,42,80,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Base:",IDC_STATIC,106,30,19,8
+    COMBOBOX        IDC_BASE_COMBO,104,41,64,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Value to search:",IDC_STATIC,19,60,52,8
+    EDITTEXT        IDC_VALUETOSEARCH_EDIT,19,71,237,14,ES_AUTOHSCROLL
+    LTEXT           "New value:",IDC_STATIC,20,90,37,8
+    EDITTEXT        IDC_NEWVALEDIT,20,100,238,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_SEARCH_BUT,20,119,50,14
+    LTEXT           "Status",IDC_STATUS_STATIC,23,140,159,8
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,21,159,233,78
+    PUSHBUTTON      "Read",IDC_READ_VALUES,75,119,50,14
+    PUSHBUTTON      "Remove Not Found",IDC_RNFBUT,129,119,73,14
+    PUSHBUTTON      "Patch",IDC_PATCHBUT,207,119,50,14
+END
+
+IDD_CUSTOMIZEDLG_DIALOG DIALOG DISCARDABLE  0, 0, 222, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customize"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Start Address:",IDC_STATIC,49,17,45,8
+    EDITTEXT        IDC_STARTA_EDIT,49,30,57,14,ES_AUTOHSCROLL
+    LTEXT           "End Address:",IDC_STATIC,51,51,43,8
+    EDITTEXT        IDC_ENDA_EDIT,50,65,55,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PICK_START,27,30,20,14
+    PUSHBUTTON      "...",IDC_PICK_END,27,64,20,14
+    PUSHBUTTON      "Module",IDC_MODULE_BUT,107,14,41,14
+    PUSHBUTTON      "Block",IDC_BLOCK_BUT,155,14,33,14
+    PUSHBUTTON      "Add",IDC_ADD_BUT,29,90,50,14
+    PUSHBUTTON      "Clear All",IDC_CLEARALL_BUT,88,90,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,31,115,151,70
+END
+
+IDD_MODULESDLG_DIALOG DIALOG DISCARDABLE  0, 0, 320, 313
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modules"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,306,299
+END
+
+IDD_MEMORYBLOCK_DIALOG DIALOG DISCARDABLE  0, 0, 320, 313
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Memory Block"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,306,299
+END
+
+IDD_INSPECTMEMORY_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Inspect Memory:"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Address:",IDC_STATIC,31,15,28,8
+    EDITTEXT        IDC_EDIT1,27,25,121,14,ES_AUTOHSCROLL
+    LTEXT           "Number of bytes (dec):",IDC_STATIC,30,46,72,8
+    EDITTEXT        IDC_EDIT_BRBYTES,27,54,121,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Inspect",IDC_INSPECTBUT,27,78,50,14
+    EDITTEXT        IDC_EDIT_RESULT,26,112,192,51,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "Value:",IDC_STATIC,31,102,21,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MemoryHacker MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MemoryHacker\0"
+            VALUE "LegalCopyright", "Copyright (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MemoryHacker.EXE\0"
+            VALUE "ProductName", "MemoryHacker Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MEMORYHACKER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_MEMORYHACK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_CUSTOMIZEDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_MODULESDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_MEMORYBLOCK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_INSPECTMEMORY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PROCESS_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Process"
+    BEGIN
+        MENUITEM "Memory hack",                 ID_PROCESS_MEMORYHACK
+        MENUITEM "Refresh",                     ID_PROCESS_REFRESH
+    END
+END
+
+IDR_CUSTOM_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Custom menu"
+    BEGIN
+        MENUITEM "Remove selected",             ID_CUSTOMMENU_REMOVESELECTED
+    END
+END
+
+IDR_MEMHACKMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Memory Hacker Menu"
+    BEGIN
+        MENUITEM "Copy Selected",               ID_COPYSELECTED
+        MENUITEM "Remove Selected",             ID_REMOVESELECTED
+        MENUITEM "Patch Selected",              ID_PATCHSELECTED
+        MENUITEM "Inspect Memory",              ID_INSPECTMEMORY
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MemoryHacker.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
